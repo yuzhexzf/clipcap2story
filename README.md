@@ -1,6 +1,31 @@
 # ClipCapApp
 
-ClipCapApp is a FastAPI application for image captioning and story generation using ClipCap.
+## ClipCap Story API
+
+A lightweight image captioning and story generation API built on [ClipCap](https://github.com/rmokady/CLIP_prefix_caption). Given an image, it generates a short caption using CLIP + GPT-2, then optionally continues that caption into a short creative story.
+
+### Features
+
+- **Image Captioning** (`/caption`): Generate a concise description of the uploaded image.
+- **Story Generation** (`/story`): First generate a caption, then let GPT-2 continue it into a short narrative (150-300 tokens).
+- **REST API** built with FastAPI, easy to integrate into web or mobile apps.
+- **Local inference** – no external API calls; runs entirely on your own hardware (GPU or CPU).
+
+### Requirements
+
+- Python 3.10
+- CUDA 12.8+ (optional, but recommended for speed)
+- 8GB+ RAM, 6GB+ GPU memory (for GPU inference)
+
+### Quick Start
+
+1. Clone the repository and set up a conda environment:
+   ```bash
+   git clone https://github.com/yourusername/clipcap-story-api.git
+   cd clipcap-story-api
+   conda create -n clipcap_env python=3.10
+   conda activate clipcap_env
+   pip install -r requirements.txt
 
 ## 主要功能
 
