@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Model weights and large binaries
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+gpt2_local/
+
+temp/
+tmp/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# IDE settings
+.vscode/
+.idea/
