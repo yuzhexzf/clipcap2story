@@ -26,6 +26,8 @@ ClipCapApp is a FastAPI application for image captioning and story generation us
    ```
 3. 下载模型权重
    - 将所需的 ClipCap 模型权重文件和 GPT-2 本地权重放置到项目目录中。
+   - ClipCap模型权重文件:https://drive.google.com/file/d/1GYPToCqFREwi285wPLhuVExlz7DDUDfJ/view, 下载后放置在ClipCap文件夹下
+   - GPT-2本地权重命名为gpt2_local放置在根目录下
 
 ## 启动服务
 
