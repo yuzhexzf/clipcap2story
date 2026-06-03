@@ -1,31 +1,16 @@
 # ClipCapApp
 
-## ClipCap Story API
+## 简要介绍
 
 A lightweight image captioning and story generation API built on [ClipCap](https://github.com/rmokady/CLIP_prefix_caption). Given an image, it generates a short caption using CLIP + GPT-2, then optionally continues that caption into a short creative story.
 
-### Features
+## 基本特征
 
 - **Image Captioning** (`/caption`): Generate a concise description of the uploaded image.
 - **Story Generation** (`/story`): First generate a caption, then let GPT-2 continue it into a short narrative (150-300 tokens).
 - **REST API** built with FastAPI, easy to integrate into web or mobile apps.
 - **Local inference** – no external API calls; runs entirely on your own hardware (GPU or CPU).
 
-### Requirements
-
-- Python 3.10
-- CUDA 12.8+ (optional, but recommended for speed)
-- 8GB+ RAM, 6GB+ GPU memory (for GPU inference)
-
-### Quick Start
-
-1. Clone the repository and set up a conda environment:
-   ```bash
-   git clone https://github.com/yourusername/clipcap-story-api.git
-   cd clipcap-story-api
-   conda create -n clipcap_env python=3.10
-   conda activate clipcap_env
-   pip install -r requirements.txt
 
 ## 主要功能
 
@@ -78,6 +63,11 @@ curl -X POST "http://127.0.0.1:8000/story" -F "image=@path/to/image.jpg"
 
 - Caption 生成通常较短
 - 故事质量可能不稳定
+
+## 引用
+
+- If you use this code, please cite the original ClipCap paper:
+- Mokady, R., Hertz, A., & Bermano, A. H. (2021). ClipCap: CLIP Prefix for Image Captioning. arXiv:2111.09734.
 
 ## 许可证
 
